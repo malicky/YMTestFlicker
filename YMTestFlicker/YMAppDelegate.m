@@ -8,6 +8,9 @@
 
 #import "YMAppDelegate.h"
 #import "YMFeedViewController.h"
+#import "Reachability.h"
+
+const float kAlertDismissDelay = 3.;
 
 @implementation YMAppDelegate
 
@@ -15,8 +18,30 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+- (void)autoDismissAndKill:(UIAlertView *)alert {
+    [alert dismissWithClickedButtonIndex:-1 animated:YES];
+    exit (1);
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // test internet reacheability
+    if ([[Reachability reachabilityForInternetConnection]currentReachabilityStatus] == NotReachable)
+    {
+        dispatch_async(dispatch_get_main_queue(),  ^(void) {
+            // ICR-2681: print a message when the day was opened automatically
+            NSString *message = NSLocalizedString(@"Internet connection not available.\n"
+                                                  "Quitting after %is." , nil);
+            message = [NSString stringWithFormat:message, (long)kAlertDismissDelay];
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"No internet connection", nil)
+                                                            message:message
+                                                           delegate:nil
+                                                  cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                                  otherButtonTitles:nil];
+            [alert show];
+            [self performSelector:@selector(autoDismissAndKill:) withObject:alert afterDelay:kAlertDismissDelay];
+        });
+    }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

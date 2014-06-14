@@ -39,6 +39,8 @@
 		13DAA2A7194C4C16006B1CF4 /* YMFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2A6194C4C16006B1CF4 /* YMFeedViewController.m */; };
 		13DAA2AB194C767A006B1CF4 /* YMFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2AA194C767A006B1CF4 /* YMFullScreenViewController.m */; };
 		13DAA2AE194C98DE006B1CF4 /* YMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2AD194C98DE006B1CF4 /* YMSettingsViewController.m */; };
+		13DAA2B2194C9DE4006B1CF4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA2B1194C9DE4006B1CF4 /* Security.framework */; };
+		13DAA2B6194C9E40006B1CF4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2B5194C9E40006B1CF4 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,9 @@
 		13DAA2AA194C767A006B1CF4 /* YMFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YMFullScreenViewController.m; path = ../YMFullScreenViewController.m; sourceTree = "<group>"; };
 		13DAA2AC194C98DE006B1CF4 /* YMSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSettingsViewController.h; sourceTree = "<group>"; };
 		13DAA2AD194C98DE006B1CF4 /* YMSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSettingsViewController.m; sourceTree = "<group>"; };
+		13DAA2B1194C9DE4006B1CF4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		13DAA2B4194C9E40006B1CF4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		13DAA2B5194C9E40006B1CF4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13DAA2B2194C9DE4006B1CF4 /* Security.framework in Frameworks */,
 				13DAA263194C44B8006B1CF4 /* CoreGraphics.framework in Frameworks */,
 				13DAA267194C44B8006B1CF4 /* CoreData.framework in Frameworks */,
 				13DAA265194C44B8006B1CF4 /* UIKit.framework in Frameworks */,
@@ -127,6 +133,7 @@
 		13DAA25F194C44B8006B1CF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13DAA2B1194C9DE4006B1CF4 /* Security.framework */,
 				13DAA260194C44B8006B1CF4 /* Foundation.framework */,
 				13DAA262194C44B8006B1CF4 /* CoreGraphics.framework */,
 				13DAA264194C44B8006B1CF4 /* UIKit.framework */,
@@ -153,6 +160,7 @@
 		13DAA269194C44B8006B1CF4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				13DAA2B3194C9E40006B1CF4 /* Reachability */,
 				13DAA26A194C44B8006B1CF4 /* YMTestFlicker-Info.plist */,
 				13DAA26B194C44B8006B1CF4 /* InfoPlist.strings */,
 				13DAA26E194C44B8006B1CF4 /* main.m */,
@@ -197,6 +205,15 @@
 				13DAA2AD194C98DE006B1CF4 /* YMSettingsViewController.m */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		13DAA2B3194C9E40006B1CF4 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA2B4194C9E40006B1CF4 /* Reachability.h */,
+				13DAA2B5194C9E40006B1CF4 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +332,7 @@
 				13DAA273194C44B8006B1CF4 /* YMAppDelegate.m in Sources */,
 				13DAA2AB194C767A006B1CF4 /* YMFullScreenViewController.m in Sources */,
 				13DAA26F194C44B8006B1CF4 /* main.m in Sources */,
+				13DAA2B6194C9E40006B1CF4 /* Reachability.m in Sources */,
 				13DAA2A7194C4C16006B1CF4 /* YMFeedViewController.m in Sources */,
 				13DAA276194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld in Sources */,
 				13DAA2AE194C98DE006B1CF4 /* YMSettingsViewController.m in Sources */,
