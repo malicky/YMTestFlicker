@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13DAA261194C44B8006B1CF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA260194C44B8006B1CF4 /* Foundation.framework */; };
+		13DAA263194C44B8006B1CF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA262194C44B8006B1CF4 /* CoreGraphics.framework */; };
+		13DAA265194C44B8006B1CF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA264194C44B8006B1CF4 /* UIKit.framework */; };
+		13DAA267194C44B8006B1CF4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA266194C44B8006B1CF4 /* CoreData.framework */; };
+		13DAA26D194C44B8006B1CF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13DAA26B194C44B8006B1CF4 /* InfoPlist.strings */; };
+		13DAA26F194C44B8006B1CF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA26E194C44B8006B1CF4 /* main.m */; };
+		13DAA273194C44B8006B1CF4 /* YMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA272194C44B8006B1CF4 /* YMAppDelegate.m */; };
+		13DAA276194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA274194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld */; };
+		13DAA278194C44B8006B1CF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DAA277194C44B8006B1CF4 /* Images.xcassets */; };
+		13DAA27F194C44B8006B1CF4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA27E194C44B8006B1CF4 /* XCTest.framework */; };
+		13DAA280194C44B8006B1CF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA260194C44B8006B1CF4 /* Foundation.framework */; };
+		13DAA281194C44B8006B1CF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA264194C44B8006B1CF4 /* UIKit.framework */; };
+		13DAA282194C44B8006B1CF4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA266194C44B8006B1CF4 /* CoreData.framework */; };
+		13DAA28A194C44B8006B1CF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13DAA288194C44B8006B1CF4 /* InfoPlist.strings */; };
+		13DAA28C194C44B8006B1CF4 /* YMTestFlickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA28B194C44B8006B1CF4 /* YMTestFlickerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13DAA283194C44B8006B1CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13DAA255194C44B8006B1CF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13DAA25C194C44B8006B1CF4;
+			remoteInfo = YMTestFlicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13DAA25D194C44B8006B1CF4 /* YMTestFlicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMTestFlicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13DAA260194C44B8006B1CF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13DAA262194C44B8006B1CF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		13DAA264194C44B8006B1CF4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		13DAA266194C44B8006B1CF4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		13DAA26A194C44B8006B1CF4 /* YMTestFlicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YMTestFlicker-Info.plist"; sourceTree = "<group>"; };
+		13DAA26C194C44B8006B1CF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13DAA26E194C44B8006B1CF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13DAA270194C44B8006B1CF4 /* YMTestFlicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMTestFlicker-Prefix.pch"; sourceTree = "<group>"; };
+		13DAA271194C44B8006B1CF4 /* YMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAppDelegate.h; sourceTree = "<group>"; };
+		13DAA272194C44B8006B1CF4 /* YMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAppDelegate.m; sourceTree = "<group>"; };
+		13DAA275194C44B8006B1CF4 /* YMTestFlicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YMTestFlicker.xcdatamodel; sourceTree = "<group>"; };
+		13DAA277194C44B8006B1CF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		13DAA27D194C44B8006B1CF4 /* YMTestFlickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMTestFlickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13DAA27E194C44B8006B1CF4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		13DAA287194C44B8006B1CF4 /* YMTestFlickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YMTestFlickerTests-Info.plist"; sourceTree = "<group>"; };
+		13DAA289194C44B8006B1CF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13DAA28B194C44B8006B1CF4 /* YMTestFlickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTestFlickerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13DAA25A194C44B8006B1CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DAA263194C44B8006B1CF4 /* CoreGraphics.framework in Frameworks */,
+				13DAA267194C44B8006B1CF4 /* CoreData.framework in Frameworks */,
+				13DAA265194C44B8006B1CF4 /* UIKit.framework in Frameworks */,
+				13DAA261194C44B8006B1CF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13DAA27A194C44B8006B1CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DAA27F194C44B8006B1CF4 /* XCTest.framework in Frameworks */,
+				13DAA282194C44B8006B1CF4 /* CoreData.framework in Frameworks */,
+				13DAA281194C44B8006B1CF4 /* UIKit.framework in Frameworks */,
+				13DAA280194C44B8006B1CF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13DAA254194C44B8006B1CF4 = {
+			isa = PBXGroup;
+			children = (
+				13DAA268194C44B8006B1CF4 /* YMTestFlicker */,
+				13DAA285194C44B8006B1CF4 /* YMTestFlickerTests */,
+				13DAA25F194C44B8006B1CF4 /* Frameworks */,
+				13DAA25E194C44B8006B1CF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13DAA25E194C44B8006B1CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA25D194C44B8006B1CF4 /* YMTestFlicker.app */,
+				13DAA27D194C44B8006B1CF4 /* YMTestFlickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13DAA25F194C44B8006B1CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA260194C44B8006B1CF4 /* Foundation.framework */,
+				13DAA262194C44B8006B1CF4 /* CoreGraphics.framework */,
+				13DAA264194C44B8006B1CF4 /* UIKit.framework */,
+				13DAA266194C44B8006B1CF4 /* CoreData.framework */,
+				13DAA27E194C44B8006B1CF4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13DAA268194C44B8006B1CF4 /* YMTestFlicker */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA271194C44B8006B1CF4 /* YMAppDelegate.h */,
+				13DAA272194C44B8006B1CF4 /* YMAppDelegate.m */,
+				13DAA277194C44B8006B1CF4 /* Images.xcassets */,
+				13DAA274194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld */,
+				13DAA269194C44B8006B1CF4 /* Supporting Files */,
+			);
+			path = YMTestFlicker;
+			sourceTree = "<group>";
+		};
+		13DAA269194C44B8006B1CF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA26A194C44B8006B1CF4 /* YMTestFlicker-Info.plist */,
+				13DAA26B194C44B8006B1CF4 /* InfoPlist.strings */,
+				13DAA26E194C44B8006B1CF4 /* main.m */,
+				13DAA270194C44B8006B1CF4 /* YMTestFlicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13DAA285194C44B8006B1CF4 /* YMTestFlickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA28B194C44B8006B1CF4 /* YMTestFlickerTests.m */,
+				13DAA286194C44B8006B1CF4 /* Supporting Files */,
+			);
+			path = YMTestFlickerTests;
+			sourceTree = "<group>";
+		};
+		13DAA286194C44B8006B1CF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA287194C44B8006B1CF4 /* YMTestFlickerTests-Info.plist */,
+				13DAA288194C44B8006B1CF4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13DAA25C194C44B8006B1CF4 /* YMTestFlicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13DAA28F194C44B8006B1CF4 /* Build configuration list for PBXNativeTarget "YMTestFlicker" */;
+			buildPhases = (
+				13DAA259194C44B8006B1CF4 /* Sources */,
+				13DAA25A194C44B8006B1CF4 /* Frameworks */,
+				13DAA25B194C44B8006B1CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YMTestFlicker;
+			productName = YMTestFlicker;
+			productReference = 13DAA25D194C44B8006B1CF4 /* YMTestFlicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13DAA27C194C44B8006B1CF4 /* YMTestFlickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13DAA292194C44B8006B1CF4 /* Build configuration list for PBXNativeTarget "YMTestFlickerTests" */;
+			buildPhases = (
+				13DAA279194C44B8006B1CF4 /* Sources */,
+				13DAA27A194C44B8006B1CF4 /* Frameworks */,
+				13DAA27B194C44B8006B1CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13DAA284194C44B8006B1CF4 /* PBXTargetDependency */,
+			);
+			name = YMTestFlickerTests;
+			productName = YMTestFlickerTests;
+			productReference = 13DAA27D194C44B8006B1CF4 /* YMTestFlickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13DAA255194C44B8006B1CF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Malick Youla";
+				TargetAttributes = {
+					13DAA27C194C44B8006B1CF4 = {
+						TestTargetID = 13DAA25C194C44B8006B1CF4;
+					};
+				};
+			};
+			buildConfigurationList = 13DAA258194C44B8006B1CF4 /* Build configuration list for PBXProject "YMTestFlicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13DAA254194C44B8006B1CF4;
+			productRefGroup = 13DAA25E194C44B8006B1CF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13DAA25C194C44B8006B1CF4 /* YMTestFlicker */,
+				13DAA27C194C44B8006B1CF4 /* YMTestFlickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13DAA25B194C44B8006B1CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DAA26D194C44B8006B1CF4 /* InfoPlist.strings in Resources */,
+				13DAA278194C44B8006B1CF4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13DAA27B194C44B8006B1CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DAA28A194C44B8006B1CF4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13DAA259194C44B8006B1CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DAA273194C44B8006B1CF4 /* YMAppDelegate.m in Sources */,
+				13DAA26F194C44B8006B1CF4 /* main.m in Sources */,
+				13DAA276194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13DAA279194C44B8006B1CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DAA28C194C44B8006B1CF4 /* YMTestFlickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13DAA284194C44B8006B1CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13DAA25C194C44B8006B1CF4 /* YMTestFlicker */;
+			targetProxy = 13DAA283194C44B8006B1CF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13DAA26B194C44B8006B1CF4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13DAA26C194C44B8006B1CF4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		13DAA288194C44B8006B1CF4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13DAA289194C44B8006B1CF4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13DAA28D194C44B8006B1CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		13DAA28E194C44B8006B1CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13DAA290194C44B8006B1CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMTestFlicker/YMTestFlicker-Prefix.pch";
+				INFOPLIST_FILE = "YMTestFlicker/YMTestFlicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		13DAA291194C44B8006B1CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMTestFlicker/YMTestFlicker-Prefix.pch";
+				INFOPLIST_FILE = "YMTestFlicker/YMTestFlicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		13DAA293194C44B8006B1CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YMTestFlicker.app/YMTestFlicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMTestFlicker/YMTestFlicker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YMTestFlickerTests/YMTestFlickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		13DAA294194C44B8006B1CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YMTestFlicker.app/YMTestFlicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMTestFlicker/YMTestFlicker-Prefix.pch";
+				INFOPLIST_FILE = "YMTestFlickerTests/YMTestFlickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13DAA258194C44B8006B1CF4 /* Build configuration list for PBXProject "YMTestFlicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13DAA28D194C44B8006B1CF4 /* Debug */,
+				13DAA28E194C44B8006B1CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13DAA28F194C44B8006B1CF4 /* Build configuration list for PBXNativeTarget "YMTestFlicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13DAA290194C44B8006B1CF4 /* Debug */,
+				13DAA291194C44B8006B1CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13DAA292194C44B8006B1CF4 /* Build configuration list for PBXNativeTarget "YMTestFlickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13DAA293194C44B8006B1CF4 /* Debug */,
+				13DAA294194C44B8006B1CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		13DAA274194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13DAA275194C44B8006B1CF4 /* YMTestFlicker.xcdatamodel */,
+			);
+			currentVersion = 13DAA275194C44B8006B1CF4 /* YMTestFlicker.xcdatamodel */;
+			path = YMTestFlicker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 13DAA255194C44B8006B1CF4 /* Project object */;
+}
