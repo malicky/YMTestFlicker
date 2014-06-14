@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		13DAA295194C4630006B1CF4 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 13DAA296194C4630006B1CF4 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				13DAA299194C4640006B1CF4 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		13DAA261194C44B8006B1CF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA260194C44B8006B1CF4 /* Foundation.framework */; };
 		13DAA263194C44B8006B1CF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA262194C44B8006B1CF4 /* CoreGraphics.framework */; };
@@ -22,6 +36,9 @@
 		13DAA282194C44B8006B1CF4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA266194C44B8006B1CF4 /* CoreData.framework */; };
 		13DAA28A194C44B8006B1CF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13DAA288194C44B8006B1CF4 /* InfoPlist.strings */; };
 		13DAA28C194C44B8006B1CF4 /* YMTestFlickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA28B194C44B8006B1CF4 /* YMTestFlickerTests.m */; };
+		13DAA2A7194C4C16006B1CF4 /* YMFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2A6194C4C16006B1CF4 /* YMFeedViewController.m */; };
+		13DAA2AB194C767A006B1CF4 /* YMFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2AA194C767A006B1CF4 /* YMFullScreenViewController.m */; };
+		13DAA2AE194C98DE006B1CF4 /* YMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2AD194C98DE006B1CF4 /* YMSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +70,13 @@
 		13DAA287194C44B8006B1CF4 /* YMTestFlickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YMTestFlickerTests-Info.plist"; sourceTree = "<group>"; };
 		13DAA289194C44B8006B1CF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13DAA28B194C44B8006B1CF4 /* YMTestFlickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTestFlickerTests.m; sourceTree = "<group>"; };
+		13DAA29A194C46FD006B1CF4 /* YMTestFlicker 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "YMTestFlicker 2.xcdatamodel"; sourceTree = "<group>"; };
+		13DAA2A5194C4C16006B1CF4 /* YMFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFeedViewController.h; sourceTree = "<group>"; };
+		13DAA2A6194C4C16006B1CF4 /* YMFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFeedViewController.m; sourceTree = "<group>"; };
+		13DAA2A9194C767A006B1CF4 /* YMFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YMFullScreenViewController.h; path = ../YMFullScreenViewController.h; sourceTree = "<group>"; };
+		13DAA2AA194C767A006B1CF4 /* YMFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YMFullScreenViewController.m; path = ../YMFullScreenViewController.m; sourceTree = "<group>"; };
+		13DAA2AC194C98DE006B1CF4 /* YMSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMSettingsViewController.h; sourceTree = "<group>"; };
+		13DAA2AD194C98DE006B1CF4 /* YMSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +143,9 @@
 				13DAA272194C44B8006B1CF4 /* YMAppDelegate.m */,
 				13DAA277194C44B8006B1CF4 /* Images.xcassets */,
 				13DAA274194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld */,
+				13DAA29E194C49B6006B1CF4 /* Model */,
 				13DAA269194C44B8006B1CF4 /* Supporting Files */,
+				13DAA2A8194C4C1F006B1CF4 /* ViewController */,
 			);
 			path = YMTestFlicker;
 			sourceTree = "<group>";
@@ -151,6 +177,26 @@
 				13DAA288194C44B8006B1CF4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13DAA29E194C49B6006B1CF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13DAA2A8194C4C1F006B1CF4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA2A9194C767A006B1CF4 /* YMFullScreenViewController.h */,
+				13DAA2AA194C767A006B1CF4 /* YMFullScreenViewController.m */,
+				13DAA2A5194C4C16006B1CF4 /* YMFeedViewController.h */,
+				13DAA2A6194C4C16006B1CF4 /* YMFeedViewController.m */,
+				13DAA2AC194C98DE006B1CF4 /* YMSettingsViewController.h */,
+				13DAA2AD194C98DE006B1CF4 /* YMSettingsViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +266,7 @@
 			targets = (
 				13DAA25C194C44B8006B1CF4 /* YMTestFlicker */,
 				13DAA27C194C44B8006B1CF4 /* YMTestFlickerTests */,
+				13DAA295194C4630006B1CF4 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -244,14 +291,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13DAA299194C4640006B1CF4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m YMTestFlicker/YMTestFlicker.xcdatamodeld -O YMTestFlicker/Model --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13DAA259194C44B8006B1CF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				13DAA273194C44B8006B1CF4 /* YMAppDelegate.m in Sources */,
+				13DAA2AB194C767A006B1CF4 /* YMFullScreenViewController.m in Sources */,
 				13DAA26F194C44B8006B1CF4 /* main.m in Sources */,
+				13DAA2A7194C4C16006B1CF4 /* YMFeedViewController.m in Sources */,
 				13DAA276194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld in Sources */,
+				13DAA2AE194C98DE006B1CF4 /* YMSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +495,20 @@
 			};
 			name = Release;
 		};
+		13DAA297194C4630006B1CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		13DAA298194C4630006B1CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,15 +537,24 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
+		13DAA296194C4630006B1CF4 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13DAA297194C4630006B1CF4 /* Debug */,
+				13DAA298194C4630006B1CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
 		13DAA274194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				13DAA29A194C46FD006B1CF4 /* YMTestFlicker 2.xcdatamodel */,
 				13DAA275194C44B8006B1CF4 /* YMTestFlicker.xcdatamodel */,
 			);
-			currentVersion = 13DAA275194C44B8006B1CF4 /* YMTestFlicker.xcdatamodel */;
+			currentVersion = 13DAA29A194C46FD006B1CF4 /* YMTestFlicker 2.xcdatamodel */;
 			path = YMTestFlicker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

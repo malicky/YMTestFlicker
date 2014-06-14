@@ -7,6 +7,7 @@
 //
 
 #import "YMAppDelegate.h"
+#import "YMFeedViewController.h"
 
 @implementation YMAppDelegate
 
@@ -16,8 +17,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    
+    YMFeedViewController *rootViewController = [YMFeedViewController new];
+    
+    UINavigationController* nav =
+    [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    self.window.rootViewController = nav;
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
