@@ -41,6 +41,11 @@
 		13DAA2AE194C98DE006B1CF4 /* YMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2AD194C98DE006B1CF4 /* YMSettingsViewController.m */; };
 		13DAA2B2194C9DE4006B1CF4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA2B1194C9DE4006B1CF4 /* Security.framework */; };
 		13DAA2B6194C9E40006B1CF4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2B5194C9E40006B1CF4 /* Reachability.m */; };
+		13DAA2BB194CA27C006B1CF4 /* YMPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2BA194CA27C006B1CF4 /* YMPersistence.m */; };
+		13DAA2BF194CA3A7006B1CF4 /* YMWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2BE194CA3A7006B1CF4 /* YMWebservice.m */; };
+		13DAA2C2194CBD77006B1CF4 /* YMImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2C1194CBD77006B1CF4 /* YMImporter.m */; };
+		13DAA2C8194DCE7C006B1CF4 /* _Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2C5194DCE7C006B1CF4 /* _Photo.m */; };
+		13DAA2C9194DCE7C006B1CF4 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2C7194DCE7C006B1CF4 /* Photo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +87,16 @@
 		13DAA2B1194C9DE4006B1CF4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		13DAA2B4194C9E40006B1CF4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		13DAA2B5194C9E40006B1CF4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		13DAA2B9194CA27C006B1CF4 /* YMPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPersistence.h; sourceTree = "<group>"; };
+		13DAA2BA194CA27C006B1CF4 /* YMPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPersistence.m; sourceTree = "<group>"; };
+		13DAA2BD194CA3A7006B1CF4 /* YMWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMWebservice.h; sourceTree = "<group>"; };
+		13DAA2BE194CA3A7006B1CF4 /* YMWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMWebservice.m; sourceTree = "<group>"; };
+		13DAA2C0194CBD77006B1CF4 /* YMImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMImporter.h; sourceTree = "<group>"; };
+		13DAA2C1194CBD77006B1CF4 /* YMImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMImporter.m; sourceTree = "<group>"; };
+		13DAA2C4194DCE7C006B1CF4 /* _Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Photo.h; sourceTree = "<group>"; };
+		13DAA2C5194DCE7C006B1CF4 /* _Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Photo.m; sourceTree = "<group>"; };
+		13DAA2C6194DCE7C006B1CF4 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		13DAA2C7194DCE7C006B1CF4 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,9 +165,10 @@
 				13DAA272194C44B8006B1CF4 /* YMAppDelegate.m */,
 				13DAA277194C44B8006B1CF4 /* Images.xcassets */,
 				13DAA274194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld */,
-				13DAA29E194C49B6006B1CF4 /* Model */,
+				13DAA2A8194C4C1F006B1CF4 /* ViewControllers */,
+				13DAA2C3194DCE7C006B1CF4 /* Model */,
+				13DAA2BC194CA28D006B1CF4 /* Controllers */,
 				13DAA269194C44B8006B1CF4 /* Supporting Files */,
-				13DAA2A8194C4C1F006B1CF4 /* ViewController */,
 			);
 			path = YMTestFlicker;
 			sourceTree = "<group>";
@@ -187,14 +203,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13DAA29E194C49B6006B1CF4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		13DAA2A8194C4C1F006B1CF4 /* ViewController */ = {
+		13DAA2A8194C4C1F006B1CF4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				13DAA2A9194C767A006B1CF4 /* YMFullScreenViewController.h */,
@@ -204,7 +213,7 @@
 				13DAA2AC194C98DE006B1CF4 /* YMSettingsViewController.h */,
 				13DAA2AD194C98DE006B1CF4 /* YMSettingsViewController.m */,
 			);
-			name = ViewController;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		13DAA2B3194C9E40006B1CF4 /* Reachability */ = {
@@ -214,6 +223,30 @@
 				13DAA2B5194C9E40006B1CF4 /* Reachability.m */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		13DAA2BC194CA28D006B1CF4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA2C0194CBD77006B1CF4 /* YMImporter.h */,
+				13DAA2C1194CBD77006B1CF4 /* YMImporter.m */,
+				13DAA2BD194CA3A7006B1CF4 /* YMWebservice.h */,
+				13DAA2BE194CA3A7006B1CF4 /* YMWebservice.m */,
+				13DAA2B9194CA27C006B1CF4 /* YMPersistence.h */,
+				13DAA2BA194CA27C006B1CF4 /* YMPersistence.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		13DAA2C3194DCE7C006B1CF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13DAA2C4194DCE7C006B1CF4 /* _Photo.h */,
+				13DAA2C5194DCE7C006B1CF4 /* _Photo.m */,
+				13DAA2C6194DCE7C006B1CF4 /* Photo.h */,
+				13DAA2C7194DCE7C006B1CF4 /* Photo.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,11 +362,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13DAA2C9194DCE7C006B1CF4 /* Photo.m in Sources */,
+				13DAA2C8194DCE7C006B1CF4 /* _Photo.m in Sources */,
 				13DAA273194C44B8006B1CF4 /* YMAppDelegate.m in Sources */,
 				13DAA2AB194C767A006B1CF4 /* YMFullScreenViewController.m in Sources */,
+				13DAA2BF194CA3A7006B1CF4 /* YMWebservice.m in Sources */,
 				13DAA26F194C44B8006B1CF4 /* main.m in Sources */,
 				13DAA2B6194C9E40006B1CF4 /* Reachability.m in Sources */,
+				13DAA2C2194CBD77006B1CF4 /* YMImporter.m in Sources */,
 				13DAA2A7194C4C16006B1CF4 /* YMFeedViewController.m in Sources */,
+				13DAA2BB194CA27C006B1CF4 /* YMPersistence.m in Sources */,
 				13DAA276194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld in Sources */,
 				13DAA2AE194C98DE006B1CF4 /* YMSettingsViewController.m in Sources */,
 			);
