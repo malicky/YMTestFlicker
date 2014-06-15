@@ -1,17 +1,14 @@
-//
-//  YMFeedViewController.m
-//  YMTestFlicker
-//
-//  Created by Malick Youla on 2014-06-14.
-//  Copyright (c) 2014 Malick Youla. All rights reserved.
-//
 
 #import "YMFeedViewController.h"
 #import "YMFullScreenViewController.h"
 #import "YMSettingsViewController.h"
+#import "PhotoCell.h"
+
+
+static NSString *cellIdentifier = @"Cell Identifier";
 
 @interface YMFeedViewController ()
-
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @end
 
 @implementation YMFeedViewController
@@ -40,6 +37,10 @@
                                         target:self action:@selector(doSetting:)];
     self.navigationItem.leftBarButtonItem = b;
 
+    // Setup the UICollectionView
+    [self.collectionView registerClass:[PhotoCell class] forCellWithReuseIdentifier:cellIdentifier];
+
+    
     // Setup the UIView
     UIView* v = self.view;
     v.backgroundColor = [UIColor grayColor];

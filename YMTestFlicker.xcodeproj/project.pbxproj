@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		138F5E64194DFF8F00CD86DD /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F5E63194DFF8F00CD86DD /* PhotoCell.m */; };
+		138F5E68194E049300CD86DD /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F5E67194E049300CD86DD /* PhotoView.m */; };
 		13DAA261194C44B8006B1CF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA260194C44B8006B1CF4 /* Foundation.framework */; };
 		13DAA263194C44B8006B1CF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA262194C44B8006B1CF4 /* CoreGraphics.framework */; };
 		13DAA265194C44B8006B1CF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAA264194C44B8006B1CF4 /* UIKit.framework */; };
@@ -46,6 +48,7 @@
 		13DAA2C2194CBD77006B1CF4 /* YMImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2C1194CBD77006B1CF4 /* YMImporter.m */; };
 		13DAA2C8194DCE7C006B1CF4 /* _Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2C5194DCE7C006B1CF4 /* _Photo.m */; };
 		13DAA2C9194DCE7C006B1CF4 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2C7194DCE7C006B1CF4 /* Photo.m */; };
+		13DAA2CC194DFE07006B1CF4 /* YMFetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DAA2CB194DFE07006B1CF4 /* YMFetchedResultsControllerDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		138F5E62194DFF8F00CD86DD /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		138F5E63194DFF8F00CD86DD /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		138F5E66194E049300CD86DD /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
+		138F5E67194E049300CD86DD /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
 		13DAA25D194C44B8006B1CF4 /* YMTestFlicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMTestFlicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DAA260194C44B8006B1CF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		13DAA262194C44B8006B1CF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +104,8 @@
 		13DAA2C5194DCE7C006B1CF4 /* _Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Photo.m; sourceTree = "<group>"; };
 		13DAA2C6194DCE7C006B1CF4 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		13DAA2C7194DCE7C006B1CF4 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		13DAA2CA194DFE07006B1CF4 /* YMFetchedResultsControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFetchedResultsControllerDataSource.h; sourceTree = "<group>"; };
+		13DAA2CB194DFE07006B1CF4 /* YMFetchedResultsControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFetchedResultsControllerDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +135,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		138F5E65194DFF9700CD86DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				138F5E62194DFF8F00CD86DD /* PhotoCell.h */,
+				138F5E63194DFF8F00CD86DD /* PhotoCell.m */,
+				138F5E66194E049300CD86DD /* PhotoView.h */,
+				138F5E67194E049300CD86DD /* PhotoView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		13DAA254194C44B8006B1CF4 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +183,7 @@
 			children = (
 				13DAA271194C44B8006B1CF4 /* YMAppDelegate.h */,
 				13DAA272194C44B8006B1CF4 /* YMAppDelegate.m */,
+				138F5E65194DFF9700CD86DD /* Views */,
 				13DAA277194C44B8006B1CF4 /* Images.xcassets */,
 				13DAA274194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld */,
 				13DAA2A8194C4C1F006B1CF4 /* ViewControllers */,
@@ -234,6 +255,8 @@
 				13DAA2BE194CA3A7006B1CF4 /* YMWebservice.m */,
 				13DAA2B9194CA27C006B1CF4 /* YMPersistence.h */,
 				13DAA2BA194CA27C006B1CF4 /* YMPersistence.m */,
+				13DAA2CA194DFE07006B1CF4 /* YMFetchedResultsControllerDataSource.h */,
+				13DAA2CB194DFE07006B1CF4 /* YMFetchedResultsControllerDataSource.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -368,12 +391,15 @@
 				13DAA2AB194C767A006B1CF4 /* YMFullScreenViewController.m in Sources */,
 				13DAA2BF194CA3A7006B1CF4 /* YMWebservice.m in Sources */,
 				13DAA26F194C44B8006B1CF4 /* main.m in Sources */,
+				138F5E68194E049300CD86DD /* PhotoView.m in Sources */,
 				13DAA2B6194C9E40006B1CF4 /* Reachability.m in Sources */,
 				13DAA2C2194CBD77006B1CF4 /* YMImporter.m in Sources */,
 				13DAA2A7194C4C16006B1CF4 /* YMFeedViewController.m in Sources */,
 				13DAA2BB194CA27C006B1CF4 /* YMPersistence.m in Sources */,
 				13DAA276194C44B8006B1CF4 /* YMTestFlicker.xcdatamodeld in Sources */,
+				138F5E64194DFF8F00CD86DD /* PhotoCell.m in Sources */,
 				13DAA2AE194C98DE006B1CF4 /* YMSettingsViewController.m in Sources */,
+				13DAA2CC194DFE07006B1CF4 /* YMFetchedResultsControllerDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +610,7 @@
 				13DAA291194C44B8006B1CF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13DAA292194C44B8006B1CF4 /* Build configuration list for PBXNativeTarget "YMTestFlickerTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +619,7 @@
 				13DAA294194C44B8006B1CF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13DAA296194C4630006B1CF4 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +628,7 @@
 				13DAA298194C4630006B1CF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
